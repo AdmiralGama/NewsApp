@@ -1,0 +1,15 @@
+﻿<Window x:Class="Interface.UpdatePopup"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Interface"
+        mc:Ignorable="d"
+        Title="Update Dialog" Height="155" Width="400">
+    <Grid Height="186" VerticalAlignment="Top">
+        <TextBox Grid.Row="0" HorizontalAlignment="Center" Width="378" Height="25" IsReadOnly="True" Text="Update Period (minutes)" Margin="0,10,0,149"/>
+        <TextBox Grid.Row="1" x:Name="periodBox" HorizontalAlignment="Center" Width="378" Height="25" IsReadOnly="False" Margin="0,40,0,119"/>
+
+        <Button Margin="11,80,9,80" Height="25" Content="Update" Click="UpdateClicked"/>
+    </Grid>
+</Window>

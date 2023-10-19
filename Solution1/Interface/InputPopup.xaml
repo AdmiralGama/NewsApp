@@ -1,0 +1,17 @@
+﻿<Window x:Class="Interface.InputPopup"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Interface"
+        mc:Ignorable="d"
+        Title="Input Dialog" Height="225" Width="400">
+    <Grid Height="184" VerticalAlignment="Top">
+        <TextBox Grid.Row="0" HorizontalAlignment="Center" Width="378" Height="25" IsReadOnly="True" Text="Name" Margin="0,10,0,149"/>
+        <TextBox Grid.Row="1" x:Name="nameBox" HorizontalAlignment="Center" Width="378" Height="25" IsReadOnly="False" Margin="0,40,0,119"/>
+
+        <Button Margin="9,149,11,10" Height="25" Content="Create" Click="CreateClicked"/>
+        <TextBox Grid.Row="0" HorizontalAlignment="Center" Width="378" Height="25" IsReadOnly="True" Text="URL (if feed)" Margin="0,80,0,79"/>
+        <TextBox x:Name="uRLBox" HorizontalAlignment="Center" Width="378" Height="25" IsReadOnly="False" Margin="0,110,0,49"/>
+    </Grid>
+</Window>
